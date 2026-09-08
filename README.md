@@ -5,4 +5,4 @@ This repo contains neuroimaging test data used by various software packages, inc
 
 Some of this data can be downloaded using special functions in the software packages, like `freesurferformats::download_opt_data()`.
 
-The data in this repository comes under different licenses, which can be found in an `attribution.json` file. You must comply with these licenses, and of course cite the respective publications when using the data in academic work, to use the data sets.
+The data in this repository comes under different licenses, which can be found in an `attribution.json` file in the respective directory. You must comply with these licenses, and of course cite the respective publications when using the data in academic work, to use the data sets.
