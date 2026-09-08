@@ -1,0 +1,9 @@
+{
+  "title": "synthetic diffusion MRI tractography data included with fsbrain package for R",
+  "authors": "FBrockmeyer",
+  "source_url": "https://github.com/dfsp-spirit/fsbrain",
+  "license": {
+    "name": "MIT License"
+  },
+  "acquired_at": "2026-09-08"
+}

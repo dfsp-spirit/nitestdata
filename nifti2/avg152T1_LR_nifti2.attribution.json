@@ -1,0 +1,9 @@
+{
+  "title": "NIfTI-2 conversion of the MNI152 ('avg152T1') 1mm T1-weighted average brain template",
+  "source_url": "https://nist.mni.mcgill.ca/mni-icbm152-non-linear-6th-generation-symmetric-average-brain-stereotaxic-registration-model/#:~:text=Permission%20to%20use%2C%20copy%2C%20modify%2C%20and%20distribute,%E2%80%9Cas%20is%E2%80%9D%20without%20express%20or%20implied%20warranty.",
+  "license": {
+    "name": "Copyright (C) 1993–2009 Louis Collins, McConnell Brain Imaging Centre, Montreal Neurological Institute, McGill University. Permission to use, copy, modify, and distribute this software and its documentation for any purpose and without fee is hereby granted, provided that the above copyright notice appear in all copies. The authors and McGill University make no representations about the suitability of this software for any purpose. It is provided “as is” without express or implied warranty. The authors are not responsible for any data loss, equipment damage, property loss, or injury to subjects or patients resulting from the use or misuse of this software package."
+  },
+  "acquired_at": "2026-09-08",
+  "notes": "The file 'avg152T1_LR_nifti2.nii.gz' is a NIfTI-2 conversion of the MNI152 ('avg152T1') 1mm T1-weighted average brain template. The MNI152 template originates from the Montreal Neurological Institute (MNI) / ICBM project and is widely redistributed (e.g., as part of FSL and SPM) for non-commercial research use. The NIfTI-2 variant distributed here is a derived conversion prepared for testing the NIfTI-2 reader."
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Freesurfer recon-all reconstruction of a human subject's T1-weighted MRI data",
+  "authors": "Tim Schäfer",
+  "source_url": "https://github.com/dfsp-spirit/sub-01",
+  "license": {
+    "name": "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication"
+  },
+  "acquired_at": "2026-09-08",
+  "notes": "Though called subject2, this is just of copy of subject1's data. This is done so we have two subjects to test functions that operate on subject lists."
+}
