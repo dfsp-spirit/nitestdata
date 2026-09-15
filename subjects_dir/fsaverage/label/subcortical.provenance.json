@@ -1,0 +1,43 @@
+{
+  "atlas": "subcortical",
+  "space": "fsaverage",
+  "origin_space": "MNI305",
+  "mesh": "subcortical",
+  "mesh_n_vertices_lh": 25910,
+  "mesh_n_vertices_rh": 25368,
+  "mesh_n_faces_lh": 51952,
+  "mesh_n_faces_rh": 50884,
+  "space_note": "The meshes are defined in MNI305 space (fsaverage surface RAS). Verified by comparing the vertex centroids of all 16 substructures against the centroids of the corresponding labels in 'subjects/fsaverage/mri/aseg.mgz' (label ids 4, 10, 11, 12, 13, 17, 18, 26 for lh and 43, 49, 50, 51, 52, 53, 54, 58 for rh), transformed with vox2ras_tkr. All structures agree within 0.3 mm to 2.5 mm (mean about 1 mm).",
+  "derived": true,
+  "conversion": {
+    "resampled": false,
+    "note": "Format conversion only: vertex coordinates, vertex order and face indices of the source meshes are preserved. The annotation files were created by assigning the 1-based, inclusive vertex ranges from the CSV mapping files to the 8 substructures and coloring them with the standard FreeSurfer 'aseg' colors."
+  },
+  "source_files": [
+    "dev_tools/subcortial/enigma_aseg/sctx_lh.vtk",
+    "dev_tools/subcortial/enigma_aseg/sctx_rh.vtk",
+    "dev_tools/subcortial/enigma_aseg/sctx_lh.csv",
+    "dev_tools/subcortial/enigma_aseg/sctx_rh.csv"
+  ],
+  "output_files": [
+    "subjects_dir/fsaverage/surf/lh.subcortical",
+    "subjects_dir/fsaverage/surf/rh.subcortical",
+    "subjects_dir/fsaverage/label/lh.subcortical.annot",
+    "subjects_dir/fsaverage/label/rh.subcortical.annot"
+  ],
+  "attribution_file": "subjects_dir/fsaverage/label/subcortical.attribution.json",
+  "generator": "dev_tools/subcortial/enigma_aseg/convert_to_fs.R (fsbrain repository)",
+  "method": "ASCII VTK polygon meshes -> FreeSurfer binary triangular surface format (freesurferformats::write.fs.surface). Vertex range mapping -> FreeSurfer annotation file with colortable (freesurferformats::write.fs.annot), subunit colors looked up by name in $FREESURFER_HOME/FreeSurferColorLUT.txt (region name variants like 'Left-Thalamus-Proper' vs. 'Left-Thalamus' are resolved). The written annotation files are read back and verified vertex-wise before being accepted.",
+  "tools": {
+    "R": "4.6.1",
+    "freesurferformats": "1.0.1",
+    "FreeSurfer": "7.4.1"
+  },
+  "checksums": {
+    "subjects_dir/fsaverage/surf/lh.subcortical": "sha256:2448591fe51ff7e08ad3580d98f15b9fe2598ba89a75765cf2c305634dcb2778",
+    "subjects_dir/fsaverage/surf/rh.subcortical": "sha256:6162b824d3e89fb8a7c31d61e51e3fca7feceff7dd505dca8f25bb129057be0e",
+    "subjects_dir/fsaverage/label/lh.subcortical.annot": "sha256:ed7dfa7868c80de794596a66e23efb831ac32651777f9001cde9ab1230fe6bbf",
+    "subjects_dir/fsaverage/label/rh.subcortical.annot": "sha256:dff9bb9cef2690e8dc53c9302497c5dbbc45b7a6801f58d8811543aa92e2177f"
+  },
+  "generated_at": "2026-09-15"
+}

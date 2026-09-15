@@ -1,0 +1,15 @@
+{
+  "atlas": "subcortical",
+  "origin_space": "fsaverage",
+  "title": "Subcortical structures of the ENIGMA aseg atlas, as FreeSurfer meshes and annotation",
+  "authors": "Larivière, S et al.",
+  "source_url": "https://github.com/MICA-MNI/ENIGMA",
+  "license": {
+    "name": "MIT",
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "acquired_at": "2026-09-15",
+  "citation": "Larivière, S., Paquola, C., Park, By. Royer, J., Wang, Y., Benkarim, O., Vos de Wael, R., Valk, S., Thomopoulos, S.I., Kirschner, M., Lewis, L.B., Evans, A.C., Sisodiya, S.M., McDonald, C.R., Thompson, P.T, Bernhardt, B.C.. The ENIGMA Toolbox: multiscale neural contextualization of multisite neuroimaging datasets. Nat Methods 18, 698–700 (2021)",
+  "dois": ["10.1038/s41592-021-01186-4"],
+  "notes": "Part of the ENIGMA software package. The original meshes are provided in ASCII VTK format, with all substructures of one hemisphere in a single mesh file, together with CSV files that map vertex ranges to substructures (created by Tim Schaefer by reading the MATLAB code of the ENIGMA plotting functions). The files provided here are those meshes converted to FreeSurfer binary surface format, plus the corresponding FreeSurfer annotation files that assign the 8 substructures per hemisphere and color them with the standard FreeSurfer 'aseg' colors from FreeSurferColorLUT.txt. The atlas is defined in MNI305 space (fsaverage surface RAS), see 'subcortical.provenance.json'. Note that left and right hemisphere structures share the same color in the FreeSurfer color LUT; this is unproblematic because one annotation file is provided per hemisphere."
+}
